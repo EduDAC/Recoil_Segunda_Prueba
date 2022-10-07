@@ -1,13 +1,15 @@
+import { RecoilRoot } from 'recoil'
 import './App.css'
+import AppRouter from './router/AppRouter'
 
 function App() {
 
   return (
-    <div className="flex justify-center items-center">
-      <h1 className="text-3xl font-bold text-blue-600">
-      Install & Setup Vite + React + Typescript + Tailwind CSS 3
-      </h1>
-    </div>
+    <>
+      <RecoilRoot>
+        <AppRouter></AppRouter>
+      </RecoilRoot>
+    </>
   )
 }
 

@@ -1,12 +1,12 @@
 import { Route, Routes, Navigate, BrowserRouter } from "react-router-dom"
-import { PageOne } from "../pages/PageOne";
+import { TodoList } from "../pages/TodoList"
 
 
 const AppRouter = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<PageOne />} />
+                <Route path="/" element={<TodoList />} />
                 <Route path="/" element={<Navigate to={"/"} />} />
             </Routes>
         </BrowserRouter>
